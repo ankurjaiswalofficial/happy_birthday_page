@@ -153,7 +153,7 @@ $('document').ready(function () {
 	$('#story').click(function () {
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('fast').promise().done(function () {
-			console.log("done");
+			$('.message').fadeIn('slow');
 		});
 
 		var i;
@@ -164,7 +164,7 @@ $('document').ready(function () {
 				$("p:nth-child(" + i + ")").fadeIn('slow').delay(1000);
 				if (i == 50) {
 					$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-						$('.cake').fadeIn('slow');
+						$('.cake').fadeIn('fast');
 					});
 
 				}
