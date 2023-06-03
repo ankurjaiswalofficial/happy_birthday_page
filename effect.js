@@ -28,8 +28,10 @@ $('document').ready(function () {
 
 	});
 	$('#play').click(function () {
-		// var audio = $('.song')[0];
-		audio = new Audio("hbd.mp3").play();
+		audio = new Audio("hbd.mp3");
+		audio.play()
+		audio1 = new Audio("hbd_continue.mp3")
+  		audio1.play();
 		// audio.play();
 		$('#bulb_yellow').addClass('bulb-glow-yellow-after');
 		$('#bulb_red').addClass('bulb-glow-red-after');

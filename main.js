@@ -1,7 +1,3 @@
-window.onload = () => {
-  audio1 = new Audio("hbd_continue.mp3")
-  audio1.play();
-}
 const fetchData = () => {
   fetch("customize.json")
     .then(data => data.json())
