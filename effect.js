@@ -30,6 +30,9 @@ $('document').ready(function () {
 	$('#play').click(function () {
 		var audio = $('.song')[0];
 		audio.play();
+		var audio2 = $('.song')[1];
+		audio2.volume(30);
+		audio2.play();
 		$('#bulb_yellow').addClass('bulb-glow-yellow-after');
 		$('#bulb_red').addClass('bulb-glow-red-after');
 		$('#bulb_blue').addClass('bulb-glow-blue-after');
