@@ -125,7 +125,8 @@ body {
 	position: absolute;
 	top: 10px;
 	width: 100vw;
-
+	left: 0px;
+	padding-right: 0px;
 }
 
 .bulb-holder {

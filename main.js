@@ -1,5 +1,8 @@
-// Import the data to customize and insert them into page
-
+window.onload = () => {
+  audio1 = new Audio("hbd_continue.mp3")
+  audio1.volume(30);
+  audio1.play();
+}
 const fetchData = () => {
   fetch("customize.json")
     .then(data => data.json())
@@ -7,31 +10,17 @@ const fetchData = () => {
       dataArr = Object.keys(data);
       dataArr.map(customData => {
         if (data[customData] !== "") {
-          if (customData === "imagePath") {
-            // document
-            //   .querySelector(`[data-node-name*="${customData}"]`)
-            //   .setAttribute("src", data[customData]);
-            console.log("Image Path Is", customData);
-          } else {
-            console.log("Data: ", customData);
-            document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
-          }
+          document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
         }
-
-        // Check if the iteration is over
-        // Run amimation if so
         if (dataArr.length === dataArr.indexOf(customData) + 1) {
           animationTimeline();
         }
       });
     });
 };
- // Replace the audio URL with your desired birthday song
-// Animation Timeline
 const animationTimeline = () => {
-  // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-  
+
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
     .join("</span><span>")}</span>`;
@@ -202,4 +191,9 @@ setTimeout(`document.getElementById("cake_fadein").click()`, 38000);
 setTimeout(`document.getElementById("light_candle").click()`, 40000);
 setTimeout(`document.getElementById("wish_message").click()`, 42000);
 setTimeout(`document.getElementById("story").click()`, 43000);
+
+// setTimeout(`document.getElementById("cake_fadein").click()`, 1000);
+// setTimeout(`document.getElementById("light_candle").click()`, 1000);
+// setTimeout(`document.getElementById("wish_message").click()`, 1000);
+// setTimeout(`document.getElementById("story").click()`, 1000);
 fetchData();
