@@ -1056,23 +1056,6 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
-@keyframes bannar_come {
-	0%{
-		transform:translate(0px,-1000px);
-	}
-	33%{
-		transform:translate(0px,0px);
-		transform:rotate(10deg);
-		/*-webkit-transform:scale(1.5);*/
-	}
-	66% {
-		transform:translate(0px,100px);
-		transform:rotate(-10deg);
-	}
-	100% {
-		transform:translate(0px,0px);
-	}
 }
 
 .balloons {
@@ -1080,15 +1063,15 @@ audio {
 	bottom: -200px;
 	opacity: 0.6;
 	z-index: 99;
-	width: 100px;
-	height: 183px;
+	width: 50px;
+	height: 73px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
+	background-size: 50px 73px;
 }
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 50px;
+	font-size: 30px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
 	display: none;
@@ -1285,6 +1268,7 @@ audio {
 }
 
 .btn-primary {
+	display: none;
         border-color: #466baf;
         padding: 10px;
         text-transform: uppercase;

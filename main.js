@@ -197,16 +197,13 @@ const animationTimeline = () => {
       0.2,
       "+=1"
     );
-
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
-
-  // Restart Animation on click
-  // const replyBtn = document.getElementById("replay");
-  // replyBtn.addEventListener("click", () => {
-  //   tl.restart();
-  // });
 };
-
-// Run fetch and animation in sequence
+setInterval(`document.getElementById("turn_on").click()`, 32000);
+setInterval(`document.getElementById("play").click()`, 35000);
+setInterval(`document.getElementById("bannar_coming").click()`, 41000);
+setInterval(`document.getElementById("balloons_flying").click()`, 57000);
+setInterval(`document.getElementById("cake_fadein").click()`, 61000);
+setInterval(`document.getElementById("light_candle").click()`, 65000);
+setInterval(`document.getElementById("wish_message").click()`, 70000);
+setInterval(`document.getElementById("story").click()`, 75000);
 fetchData();
