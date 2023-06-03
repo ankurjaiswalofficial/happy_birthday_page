@@ -12,7 +12,7 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
+	background-color: #19dc5d;
 	
 }
 .peach-after {
@@ -120,6 +120,12 @@ body {
 	background-repeat: no-repeat no-repeat;
 	background-position:center 0px;
 	background-size: 50px 50px;
+}
+.row{
+	position: absolute;
+	top: 10px;
+	width: 100vw;
+
 }
 
 .bulb-holder {
@@ -966,6 +972,16 @@ body {
 }
 audio {
 	display: none;
+}
+
+.row2, .row3{
+	position: absolute;
+	top: 55px;
+	width: 100vw;
+}
+
+.row3{
+	top: calc(100vh - 70%);
 }
 
 .bannar {
