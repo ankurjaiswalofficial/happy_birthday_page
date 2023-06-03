@@ -152,13 +152,12 @@ $('document').ready(function () {
 		$(this).fadeOut('slow');
 		$('.message').fadeIn('slow');
 
-		var i;
 		function msgLoop(i) {
 			$("p:nth-child(" + i + ")").fadeOut('slow').delay(800).promise().done(function () {
-				i = i + 1;
-				$("p:nth-child(" + i + ")").fadeIn('slow').delay(1000);
-				if (i == 45) {
-					console.log("all done.");
+				i++;
+				$("p:nth-child(" + i + ")").fadeIn('slow').delay(800);
+				if (i == 46) {
+					$("p:nth-child(45)").fadeIn('slow');
 				}
 				else {
 					msgLoop(i);
