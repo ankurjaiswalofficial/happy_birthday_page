@@ -198,12 +198,12 @@ const animationTimeline = () => {
       "+=1"
     );
 };
-setInterval(`document.getElementById("turn_on").click()`, 32000);
-setInterval(`document.getElementById("play").click()`, 35000);
-setInterval(`document.getElementById("bannar_coming").click()`, 38000);
-setInterval(`document.getElementById("balloons_flying").click()`, 43000);
-setInterval(`document.getElementById("cake_fadein").click()`, 48000);
-setInterval(`document.getElementById("light_candle").click()`, 52000);
-setInterval(`document.getElementById("wish_message").click()`, 55000);
-setInterval(`document.getElementById("story").click()`, 58000);
+setInterval(`document.getElementById("turn_on").click()`, 1000);
+setInterval(`document.getElementById("play").click()`, 1000);
+setInterval(`document.getElementById("bannar_coming").click()`, 1000);
+setInterval(`document.getElementById("balloons_flying").click()`, 1000);
+setInterval(`document.getElementById("cake_fadein").click()`, 1000);
+setInterval(`document.getElementById("light_candle").click()`, 1000);
+setInterval(`document.getElementById("wish_message").click()`, 1000);
+setInterval(`document.getElementById("story").click()`, 1000);
 fetchData();

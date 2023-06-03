@@ -974,16 +974,19 @@ audio {
 	display: none;
 }
 
-.row2, .row3{
+.row2, .row3, .row4{
 	position: absolute;
 	top: 55px;
 	width: 100vw;
 }
 
-.row3{
-	top: calc(100vh - 70%);
+.row4{
+	top: calc(100vh - 80%);
 }
 
+.row3{
+	top: calc(100vh - 50%);
+}
 .bannar {
 	max-width: 100%;
 	-webkit-transform:translate(0px,-500px);
