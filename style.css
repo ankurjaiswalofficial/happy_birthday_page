@@ -127,9 +127,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
 
   .four .text-box {
     width: 90%;

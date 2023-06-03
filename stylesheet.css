@@ -1303,11 +1303,3 @@ audio {
         background-color: #466baf;
     }
 
-
-
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
