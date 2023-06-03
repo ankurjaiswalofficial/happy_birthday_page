@@ -26,17 +26,12 @@ const fetchData = () => {
       });
     });
 };
-function playMusic() {
-  // Replace the audio URL with your desired birthday song
-  var audio = new Audio('hbd.mp3');
-  audio.play();
-}
-
+ // Replace the audio URL with your desired birthday song
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
-
+  
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
     .join("</span><span>")}</span>`;
